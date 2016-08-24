@@ -18,7 +18,7 @@ install_nagios(){
 install_nagios_plugin(){
     tar xvf nagios-plugins-2.1.1.tar.gz
     pushd nagios-plugins-2.1.1
-    /configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl
+    ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl
     make
     make install
     popd
